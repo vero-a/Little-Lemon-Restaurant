@@ -3,7 +3,6 @@ import Logo from '../assets/Logo.svg';
 import Nav from './Nav';
 import HamburgerMenu from '../assets/hamburgermenu.svg';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';*/
 
 function Navbar() {
     const [navbarOpen, setNavbarOpen] = useState(false);
