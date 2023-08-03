@@ -6,7 +6,7 @@ function About() {
     <section className="hero-text">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
-        <p className="about-subtext">Little Lemon is a family owned Mediterranean restaurant, located on  Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist.</p>
+        <p className="about-subtext">Little Lemon is a family owned Mediterranean restaurant, located on  Maldove Street in Chicago, Illionis. Focused on traditional recipes served with a modern twist.</p>
     </section>
 
     <section className="overlap-images">

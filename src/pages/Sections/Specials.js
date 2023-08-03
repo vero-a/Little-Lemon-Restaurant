@@ -15,7 +15,7 @@ function Specials() {
     </article>
 
     <section className="specials-cards">
-        <SpecialsCard image={GreekSalad} name="Greek Salad" price="$12.99" description="Salad, made with tomato, lettuce, feta cheese, and olives.
+        <SpecialsCard image={GreekSalad} name="Greek Salad" price="$12.99" description="Salad, made with tomato, onion, lettuce, feta cheese, and olives.
          Dressed with salt and olive oil."/>
         <SpecialsCard image={Bruschetta}name="Bruschetta" price="$5.99" description="Toasted bread, topped with tomato and balsamic vinaigrette."/>
         <SpecialsCard image={LemonDessert} name="Lemon Dessert" price="$5.00" description="A 4 layer lemon cake with vanilla buttercream."/>

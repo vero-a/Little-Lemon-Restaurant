@@ -25,9 +25,9 @@ function Footer() {
             <div className='contact'>
                 <li><h6 className='header-footer'>Contact</h6></li>
                 <ul className='footer-links'>
-                    <li>Address</li>
-                    <li>Phone Number</li>
-                    <li>Email</li>
+                    <li>Maldove Street, Chicago, IL</li>
+                    <li>(312) --- -----</li>
+                    <li>info@littlelemon.com</li>
                 </ul>
             </div>
             <div className='social-links'>

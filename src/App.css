@@ -98,6 +98,7 @@ footer {
 
 footer > menu {
   grid-template-columns: repeat(4, 1fr);
+  padding-right: 1rem;
 }
 
 .header-footer {
@@ -146,6 +147,10 @@ footer > menu {
 
   background-color: white;
   padding: 0.5rem;
+}
+
+.contact {
+  padding-right: 1rem;
 }
 
 /* Header */
@@ -524,6 +529,13 @@ input, select, option, textarea {
 }
 
 /* Media */
+
+@media screen and (max-width: 900px) {
+  .specials-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 @media screen and (max-width: 800px) {
 
   .desktop {
@@ -561,20 +573,6 @@ input, select, option, textarea {
     padding: 1rem 2rem 1.5rem 2rem;
   }
 
-  .specials-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-
-  .menu-card > img {
-    max-height: 20vh;
-  }
-
-  .menu-card-content > p {
-    margin-bottom: -5rem;
-  }
-
   .testimonials {
     padding: 1rem 2rem 2rem 2rem;
   }
@@ -605,7 +603,7 @@ input, select, option, textarea {
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 625px){
    footer > menu {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -632,4 +630,17 @@ input, select, option, textarea {
     margin-left: -5rem;
   }
 
+  .specials-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .menu-card > img {
+    max-height: 20vh;
+  }
+
+  .menu-card-content > p {
+    margin-bottom: -5rem;
+  }
 }

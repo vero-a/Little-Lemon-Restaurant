@@ -8,7 +8,7 @@ function Heading() {
                 <section className="hero-text">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
-                    <p className="subsection">We are a family owned Mediterranean restaurant, located on  Maldove Street in Chicago, Illionis. We focus
+                    <p className="subsection">We are a family owned Mediterranean restaurant. Focused
                     on traditional recipes served with a modern twist.</p>
                     <br></br>
                     <Link className="action-button" to="/reservations">Reserve a Table</Link>
