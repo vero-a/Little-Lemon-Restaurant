@@ -2,7 +2,7 @@ import React from 'react';
 import Heading from './Reservations/Heading';
 import BookingForm from './Reservations/BookingForm';
 import { useReducer } from 'react';
-import { fetchAPI } from '../BookingsAPI';
+import { fetchAPI } from '../pages/Reservations/BookingsAPI';
 
 function Header() {
 
@@ -25,4 +25,7 @@ function Header() {
   )
 }
 
+ export function submitAPI(formData) {
+    return true;
+  }
 export default Header
