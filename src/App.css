@@ -1,38 +1,635 @@
+
+*{
+  font-family: 'Karla', sans-serif;
+  font-family: 'Markazi Text', serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+a:visited, link:visited, a:link, link:link{
+  text-decoration: none;
+  color: #333333;
+}
+
+.action-button{
+  background-color: #f4ce14;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 1rem;
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.action-button:hover {
+  background-color: #495e57;
+  color:#edefee;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #edefee;
+  transition: 0.2s;
+}
+
+/* navbar */
+
+menu {
+  list-style: none;
+  display: grid;
+}
+
+.hamburger-icon {
+  margin-top: 1.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar {
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.navbar h5{
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar > li,
+.navbar > a,
+.navbar > Link {
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.nav-icon {
+  display: none;
+  grid-template-columns: 5fr 1fr;
+}
+
+.hover-effect:hover {
+  background-color: #f4ce14;
+  transition: 0.25s;
+}
+
+.nav-logo {
+  max-height: 4rem;
+  margin-top: 0.7rem;
+  margin-left: -1.25rem;
+}
+
+/*footer*/
+
+footer {
+  min-height: 13rem;
+  background-color: #495e57;
+  color: #ffffff;
+  padding-bottom: 1rem;
+  margin-top: -1rem;
+}
+
+footer > menu {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.header-footer {
+  margin-bottom: -1.25rem;
+  font-size: 1.3rem;
+  font-family: 'Karla';
+  font-weight: bold;
+  margin-bottom: -0.5rem;
+}
+
+.footer-links {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links > a,
+.footer-links > Link,
+.footer-links > li {
+  text-align: left;
+  display: block;
+  color: white;
+  padding-top: 0.2rem;
+  font-family: "Karla", "sans-serif";
+}
+
+.footer-links a, li {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Karla';
+}
+
+.logo-footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo-footer > img {
+  max-height: 8rem;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 3rem;
+
+  background-color: white;
+  padding: 0.5rem;
+}
+
+/* Header */
+.call-to-action {
+  background-color: #495e57;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.2rem 5rem 1.2rem 5rem;
+  margin-top: -1.4rem;
+  column-gap: 1rem;
+}
+
+.hero-text > h1 {
+  font-size: 4rem;
+  margin-top: 0rem;
+  margin-bottom: -3rem;
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  color: #f4ce14;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-family: 'Markazi Text';
+  font-weight: 400;
+  color: #edefee;
+}
+
+.subsection {
+  font-family: 'Karla';
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: -1rem;
+  max-width: 65ch;
+}
+
+.hero-image {
+  max-height: 18rem;
+  padding-left: 2rem;
+}
+
+.hero-image > img {
+  width: 90%;
+  height: 130%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* Specials */
+.specials {
+  padding: 6rem 5rem 3rem 5rem;
+}
+
+.specials-heading {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.specials-heading > h1 {
+  font-size: 4rem;
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.specials-heading .action-button {
+  justify-self: end;
+  align-self: end;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.specials-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3vw;
+}
+
+.menu-card {
+  background-color: #edefee;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  line-height: 1.5;
+}
+
+.menu-card > img {
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.menu-card-content {
+  margin: 0.5rem 2rem 0rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+  "Title Price"
+  "Description Description"
+  "Button Button";
+}
+
+.menu-card-content > h1 {
+  font-size: 1.5rem;
+  font-family: 'Karla';
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  grid-area: Title;
+  justify-items: start;
+  align-self: center;
+  line-height: 1.5rem;
+}
+
+.menu-card-content > h3 {
+  font-size: 1rem;
+  font-family: 'Karla';
+  font-weight: 400;
+  color: #ee9972;
+  margin: 0;
+  grid-area: Price;
+  justify-items: end;
+  text-align: end;
+  align-self: center;
+}
+
+.menu-card-content > p {
+  font-size: 1rem;
+  font-family: 'Karla';
+  font-weight: 400;
+  grid-area: Description;
+  max-width: 65ch;
+  min-width: 10ch;
+  min-height: 15vh;
+  max-height: 20vh;
+  align-items: start;
+}
+
+.special-button {
+  background-color: transparent;
+  color: #333333;
+  font-family: 'Karla';
+  font-weight: 500;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  grid-area: Button;
+  align-items: end;
+  justify-items: start;
+  text-align: left;
+}
+
+.special-button:hover {
+  background-color: transparent;
+  color: #f4ce14;
+  transition: 0.2s;
+}
+
+.specials-carousel {
+  display: none;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 2rem 5rem 3rem 5rem;
+  background-color: #495e57;
+}
+
+.testimonials-header > h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Markazi Text";
+  font-weight: 500;
+  color: #edefee;
+  margin: 0rem 0 2rem 0;
+}
+
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 4vw;
+  align-self: center;
+  justify-self: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.individual-testimonial-card {
+  background-color: white;
+  padding: 1rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  border-radius: 1rem;
+}
+
+.individual-testimonial-card > p {
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 65ch;
+  justify-self: start;
+}
+
+.individual-testimonial-card > h3 {
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 1rem;
+  align-self: end;
+}
+
+
+.star-ratings {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color: transparent;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.testimonials-carousel {
+  display: none;
+}
+
+/* About */
+.about-us {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.25rem 5rem 2.5rem 5rem;
+  min-height: 22rem;
+  margin-bottom: 3.5rem;
+  margin-left: 2rem;
+  grid-gap: 10vw;
+}
+
+.about-us .hero-text > h1 {
+  color: #333333;
+}
+
+.about-us .hero-text > h2 {
+  color: #333333;
+}
+
+.about-us h1 {
+  margin-top: 1rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about-subtext {
+  color: #333333;
+  font-family: 'Karla';
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 65ch;
+  margin-top: -1rem;
+  padding-right: 1rem;
+}
+
+.overlap-images {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  max-height: 18rem;
+}
+
+.overlap-images > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.about-1 {
+  grid-column: 1/span 8;
+  grid-row: 1;
+  margin-top: 30%;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.about-2 {
+  grid-column: 5/-1;
+  grid-row: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/*reservation*/
+.page-header {
+  background-color: #495e57;
+  padding: .5rem;
+  text-align: center;
+  color: #edefee;
+  margin-top: -1.4rem;
+  margin-bottom: 2rem;
+}
+
+.page-header > h1 {
+  font-family: "Markazi Text";
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.page-header > h2 {
+  font-family: "Markazi Text";
+  font-weight: 400;
+  font-size: 3rem;
+  color: #f4ce14;
+}
+
+.page-header > p {
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.reservation-form {
+  justify-content: center;
+  align-self: center;
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.reservation-form > label {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: 'Karla';
+  font-weight: 500;
+}
+
+.reservation-form > p {
+  font-family: 'Karla';
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.disclaimer {
+  text-align: center;
+  max-width: 65ch;
+}
+
+.reservation-form input, .reservation-form select, .reservation-form textarea {
+  font-family: 'Karla';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+input, select, option, textarea {
+  background-color: #edefee;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 1rem;
+  resize: none;
+  min-width: 40ch;
+}
+
+.reservation-form .action-button {
+  text-align: center;
+}
+
+.reservation-form .action-button {
+  border: none;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Media */
+@media screen and (max-width: 800px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto / auto;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .page-header {
+    margin-top: 1rem;
+  }
+
+  .call-to-action {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 1.25rem 2rem 1.75rem 2rem;
+  }
+
+  .call-to-action h1 {
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .call-to-action .action-button{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .specials {
+    padding: 1rem 2rem 1.5rem 2rem;
+  }
+
+  .specials-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .menu-card > img {
+    max-height: 20vh;
+  }
+
+  .menu-card-content > p {
+    margin-bottom: -5rem;
+  }
+
+  .testimonials {
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  .testimonials-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .about-us {
+    padding: 1rem 2rem 0 2rem;
+    margin-top: 2rem;
+    grid-gap: 1vw;
+  }
+
+  .about-us h1 {
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-icon {
+    display: grid;
+  }
+
+  .nav-icon > img {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px){
+   footer > menu {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "Nav Nav"
+    "Contact Social";
+    margin-right: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer-links {
+    grid-area: Nav;
   }
+
+  .social-links {
+    grid-area: Social;
+  }
+
+  .contact {
+    grid-area: Contact;
+  }
+
+  .logo-footer > img {
+    margin-top: 0.5rem;
+    margin-left: -5rem;
+  }
+
 }

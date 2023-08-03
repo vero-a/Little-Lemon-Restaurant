@@ -1,0 +1,142 @@
+*{
+  font-family: 'Karla', sans-serif;
+font-family: 'Markazi Text', serif;
+}
+/*.footer {
+    width: 100%;
+    Height: auto;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer .leftSide {
+    flex: 30%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    padding-left: 150px;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 90px;
+    margin-top: 20px;
+  }
+
+
+  .footer .doormatNav {
+    flex: 70%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .footer .contact {
+    flex: 70%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .footer .socialLinks {
+    flex: 70%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /*.footer .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .footer .rightSide svg {
+    font-size: 40px;
+  }
+
+  h6 {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }*/
+
+  footer {
+    min-height: 13rem;
+    background-color: #495e57;
+    color: #ffffff;
+    padding-bottom: 1rem;
+    margin-top: -1.4rem;
+  }
+
+  footer > menu {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .header-footer {
+    margin-bottom: -1.25rem;
+  }
+
+  .footer-links {
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-links > a,
+  .footer-links > Link,
+  .footer-links > li {
+    text-align: left;
+    display: block;
+    color: white;
+    padding-top: 0.2rem;
+    font-family: "Karla", "sans-serif";
+  }
+
+  .footer-links > a:hover,
+  .footer-links > Link:hover {
+    background-color: #495e57;
+    text-decoration: underline;
+  }
+
+  .logo-footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .logo-footer > img {
+    max-height: 8rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 3rem;
+
+    background-color: white;
+    padding: 0.5rem;
+  }
