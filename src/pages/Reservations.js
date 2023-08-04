@@ -25,7 +25,4 @@ function Header() {
   )
 }
 
- export function submitAPI(formData) {
-    return true;
-  }
 export default Header

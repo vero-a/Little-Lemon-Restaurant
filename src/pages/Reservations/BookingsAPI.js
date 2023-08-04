@@ -23,3 +23,7 @@ const seededRandom = function (seed) {
     }
     return result;
   }
+
+  export function submitAPI(formData) {
+    return true;
+  }
