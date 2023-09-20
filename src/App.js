@@ -2,11 +2,11 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Routing from './Components/Routing';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <Navbar/>
         <Routing/>
         <Footer/>
