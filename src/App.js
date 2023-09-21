@@ -6,7 +6,7 @@ import { HashRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router>
         <Navbar/>
         <Routing/>
         <Footer/>

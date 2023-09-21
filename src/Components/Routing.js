@@ -11,7 +11,7 @@ import BookingConfirmation from '../pages/BookingConfirmation';
 function Routing() {
   return (
     <Routes>
-      <Route path='/Home' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/reservations' element={<Reservations/>}/>
       <Route path='/menu' element={<Menu/>}/>
       <Route path='/about' element={<About/>}/>
