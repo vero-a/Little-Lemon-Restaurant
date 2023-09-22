@@ -390,7 +390,7 @@ footer > menu {
   min-height: 22rem;
   margin-bottom: 3.5rem;
   margin-left: 2rem;
-  grid-gap: 10vw;
+  grid-gap: 5vw;
 }
 
 .about-us .hero-text > h1 {
@@ -549,6 +549,14 @@ input, select, option, textarea {
     padding-left: 0;
   }
 
+  .footer-links a, li {
+    font-size: .8rem;
+  }
+
+  .header-footer {
+    font-size: 1rem;
+  }
+
   .page-header {
     margin-top: 1rem;
   }
@@ -627,7 +635,7 @@ input, select, option, textarea {
 
   .logo-footer > img {
     margin-top: 0.5rem;
-    margin-left: -5rem;
+    margin-left: -1rem;
   }
 
   .specials-cards {
@@ -642,5 +650,43 @@ input, select, option, textarea {
 
   .menu-card-content > p {
     margin-bottom: -5rem;
+  }
+
+  .action-button{
+    font-size: 1rem;
+  }
+
+  .hero-image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  .about-us{
+    padding-left: 1rem;
+    gap: 5vw;
+  }
+
+  .about-us h1 {
+    font-size: 3rem;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .about-us p {
+    font-size: 1rem;
+  }
+
+  label, input, select, option, textarea {
+    min-width: 20ch;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .reservation-form .action-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
